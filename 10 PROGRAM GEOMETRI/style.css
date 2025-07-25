@@ -1,0 +1,100 @@
+:root {
+    --primary: #a78bfa;
+    --secondary: #c084fc;
+    --bg: #f9f9ff;
+    --card: #ffffff;
+    --text: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: var(--card);
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--text);
+    font-weight: 500;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 15px;
+    margin-bottom: 18px;
+    transition: 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: var(--secondary);
+    outline: none;
+}
+
+input[type="submit"] {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: var(--secondary);
+}
+
+.hasil {
+    background-color: #f3f0ff;
+    border-left: 5px solid var(--primary);
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: var(--text);
+    font-size: 15px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin-top: 25px;
+}
